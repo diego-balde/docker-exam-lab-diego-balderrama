@@ -34,14 +34,14 @@ Abrí en el navegador 👉 http://localhost:3000
 
 También podés levantarlo con Docker Compose usando el archivo docker-compose.yml incluido:
 
-docker-compose up --build
+docker compose up
 
+Esto construye la imagen y levanta el servicio  definido en .
 
-Esto construirá la imagen y levantará el servicio app mapeando el puerto 3000.
 
 Para correr en segundo plano:
 
-docker-compose up -d
+docker compose up -d
 
 
 🛑 Detener el contenedor
@@ -51,6 +51,6 @@ Si usaste docker run:
 docker stop mi_app && docker rm mi_app
 
 
-Si usaste docker-compose:
+Si usaste docker compose:
 
-docker-compose down
+docker compose down
